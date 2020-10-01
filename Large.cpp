@@ -2,10 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 
-
-	
-
-
 void checkingWord()
 {
 	std::cout<<"write your word now?"<<std::endl;
@@ -15,14 +11,14 @@ void checkingWord()
 	
 		
 	int number;
-	std::cout<<"How many letters word you are guessing?"<<std::endl;
+	std::cout<<"How many letter word are you guessing?"<<std::endl;
 	std::cin>>number;
 	
 
 
 
 	if (number <= 3 || number > 5)
-	std::cout<<"You have to guess only 4, 5 letter words"<<std::endl;	
+	std::cout<<"You have to guess only 4 or 5 letter words"<<std::endl;	
 
 
 	
@@ -36,7 +32,7 @@ void checkingWord()
 		if (strcmp (guess,FirstWord) == 0)
 		{	
 			std::cout<<"your word is accepted"<<std::endl;
-			std::cout<<"It means ...... "<<std::endl;
+			std::cout<<"It means very impressive "<<std::endl;
 			std::cout<<std::endl;
 
 		} else if (strcmp (guess,SecondWord) == 0)
@@ -53,7 +49,7 @@ void checkingWord()
 
 		} else 
 		{
-			std::cout<<"Your 5 letters word in not accepted"<<std::endl;
+			std::cout<<"Your 5 letters word is not accepted"<<std::endl;
 			std::cout<<"It doesnot mean anything to us"<<std::endl;
 			std::cout<<std::endl;
 
@@ -77,7 +73,7 @@ void checkingWord()
 		} else if (strcmp (guess,SecondWord) == 0)
 		{	
 			std::cout<<"your word is accepted"<<std::endl;
-			std::cout<<"It refers to a particular type of sounds coming from lungs! "<<std::endl;
+			std::cout<<"It refers to a particular type of sound coming from lungs! "<<std::endl;
 			std::cout<<std::endl;
 
 		} else if (strcmp (guess,ThirdWord) == 0)
@@ -100,19 +96,13 @@ void checkingWord()
 
 		} else 
 		{
-			std::cout<<"Your 4 letters word in not accepted"<<std::endl;
-			std::cout<<"It doesnot mean anything to us"<<std::endl;
+			std::cout<<"Your 4 letters word is not accepted"<<std::endl;
+			std::cout<<"It does not mean anything to us"<<std::endl;
 			std::cout<<std::endl;
 		}
 	  }
 	
 	}
-
-
-
-
-
-
 
 int main()
 {
