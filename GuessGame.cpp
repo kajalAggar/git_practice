@@ -12,10 +12,10 @@ void game()
 
 	std::cout<<std::endl;
 	std::cout<<" ---------------------------------------------"<<std::endl;
-	std::cout<<" Hey Do you want to play guess a number game?"<<std::endl;
+	std::cout<<" Hey Do you want to play Guess a Number Game ?"<<std::endl;
 	std::cout<<" Guess a number that is in my mind in 7 trails"<<std::endl;
 	std::cout<<" Dont worry, I will keep helping you"<<std::endl;
-	std::cout<<" The umber is between 0 and 100"<<std::endl;
+	std::cout<<" The number is between 0 and 100"<<std::endl;
 	std::cout<<" ---------------------------------------------"<<std::endl;
 	std::cout<<std::endl;
 
@@ -23,7 +23,7 @@ void game()
 	for (int i = 0; i<7; i++)
 	{
 					
-		std::cout<<"Enter guess n° "<<i+1<<std::endl;
+		std::cout<<"Enter guess number "<<i+1<<std::endl;
 		int guess;
 		std::cin>>guess;
 		
@@ -56,14 +56,13 @@ void game()
 bool toContinue()
 {
 	std::cout<<std::endl;	
-	std::cout<<"Do you want to play anoter round (y/n)"<<std::endl;
+	std::cout<<"Do you want to play another round (y/n)"<<std::endl;
 	char c;
 	std::cin>>c;
-	if(c == 'y')
+	if(c == 'yes')
 	game();
-	else if (c == 'n')
+	else if (c == 'no')
 	return(1);
-
 }
 
 
